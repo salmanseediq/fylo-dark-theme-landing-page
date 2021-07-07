@@ -20,15 +20,16 @@ header {
   margin: 10px;
   justify-content: space-between;
   font-family: "Raleway", sans-serif;
+  width: 90%;
 }
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   list-style: none;
 }
 .logo img {
-  width: 100px;
+  width: 50%;
 }
 
 .intro {
@@ -37,6 +38,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: 90%;
 }
 .intro img {
   width: 50%;
@@ -276,4 +278,92 @@ footer {
 .social {
   display: flex;
   gap: 20px;
+}
+span {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 0.6em;
+  }
+  header {
+    font-size: 0.6em;
+
+    max-width: 500px;
+  }
+
+  .intro h2 {
+    text-align: center;
+    width: 60%;
+  }
+
+  .content {
+    max-width: 500px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    position: relative;
+    right: 30px;
+    width: 100%;
+  }
+
+  #product {
+    margin-right: 40px;
+    text-align: center;
+    position: relative;
+    right: 30px;
+    min-width: 100%;
+  }
+
+  .feedback {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 70px;
+    max-width: 100%;
+  }
+
+  .email-container {
+    color: #fff;
+    width: 80%;
+    position: relative;
+    left: 50px;
+
+    text-align: center;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  .email {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .free {
+    padding: 8px 40px;
+  }
+
+  .footer-row {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
 }
